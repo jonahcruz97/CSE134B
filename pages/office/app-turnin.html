@@ -6,6 +6,7 @@
 
     <title>Lease Ease</title>
     <link rel="stylesheet" type="text/css" href="../../css/main-stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../css/application-stylesheet.css" media="screen"/>
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
   </head>
 
@@ -13,72 +14,72 @@
 
     <!-- Top Nav bar -->
     <div class="nav">
-      <img src="../img/logo.png" class="logo">
+      <img src="../../img/logo.png" class="logo">
       <div class="title">
         <h2>Axiom La Jolla</h2>  
       </div>
-      <img src="../img/profile.png" class="profile">
+      <img src="../../img/profile.png" class="profile">
     </div>
 
-    <!-- To do list -->
-    <div class="check-list">
-      <h4>Apartment To Do List</h4>
-      <ul>
-        <li><a href="group.html">Approve apartment application</a></li>
-        <li><a href="choose-apt.html">Approve Deposit</a></li>
-        <li><a href="app-turnin.html">Approve Utilities</a></li>
-      </ul>
-    </div>
-
-    <!-- Application step body -->
-    <div class="app-section">
-      <div class="header">
-        <h2>Apartment Application</h2>
+    <!-- Main body -->
+    <div class="main-body">
+      <!-- To do list -->
+      <div class="check-list">
+        <h4>Apartment To Do List</h4>
+        <ul>
+          <li class="done"><a href="group.html">Approve apartment application</a></li>
+          <li><a href="choose-apt.html">Approve Deposit</a></li>
+          <li><a href="app-turnin.html">Approve Utilities</a></li>
+        </ul>
       </div>
-      <div class="body">
-        <embed src="https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2011/sargent-lecture_slides.pdf" width="500" height="375" type='application/pdf'>
-        <form>
-          <div>
-             <button>Approve</button>
+
+      <!-- Application step body -->
+      <div class="app-section">
+        <div class="header">
+          <h2>Apartment Application</h2>
+        </div>
+        <div class="body">
+          <embed src="https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2011/sargent-lecture_slides.pdf" width="500" height="375" type='application/pdf'>
+          <div class="upload-form">
+            <form>
+              <div>
+                 <button>Approve</button>
+              </div>
+            </form>  
           </div>
-        </form>
+        </div>
       </div>
-    </div>
 
-    <!-- Application Progress -->
-    <div class="progress"> 
-      <ol>
-        <li>
-          <div class="member">
+      <!-- Application Progress -->
+      <div class="progress-bar"> 
+        <ol>
+          <li>
             <a>Andrew</a>
-          </div>
-        </li>
-        <li>
-          <div class="member">
+          </li>
+          <li>
             <a>Pete</a>
-          </div>
-        </li>
-        <li>
-          <div class="member">
+          </li>
+          <li>
             <a>Vac</a>
-          </div>
-        </li>
-        <li>
-          <div class="member">
+          </li>
+          <li>
             <a>Tommy</a>
-          </div>
-        </li>
-      </ol>
-    </div>
+          </li>
+        </ol>
+      </div>
+      
+      <div class="clearer"></div>
 
-    <!-- Chat -->
-    <div class="chat">
-      <a>Apartment Group Chat</a>
+      <!-- Chat -->
+      <div class="chat-box">
+        <div class="chat">
+          <a>Apartment Chat</a>
+        </div>
+        <div class="chat">
+          <a>Leasing Office Chat</a>
+        </div>  
+      </div> 
     </div>
-    <div class="chat">
-      <a>Apartment and Leasing Rep Chat</a>
-    </div>
-
   </body>
 
   <footer>

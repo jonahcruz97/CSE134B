@@ -6,6 +6,7 @@
 
     <title>Lease Ease</title>
     <link rel="stylesheet" type="text/css" href="../css/main-stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/application-stylesheet.css" media="screen"/>
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
   </head>
 
@@ -20,64 +21,79 @@
       <img src="../img/profile.png" class="profile">
     </div>
 
-    <!-- To do list -->
-    <div class="check-list">
-      <h4>Apartment To Do List</h4>
-      <ul>
-        <li><a href="group.html">Create Group</a></li>
-        <li><a href="choose-apt.html">Choose Apartment</a></li>
-        <li><a href="app-turnin.html">Turn in Application</a></li>
-        <li><a href="deposit.html">Make Deposit</a></li>
-        <li><a href="utilities.html">Set up Utilities</a></li>
-        <li><a href="rent-insur.html">Get Renters Insurance</a></li>
-        <li><a href="id-turnin.html">Turn in Identity Documents</a></li>
-        <li><a href="sign-lease.html">Sign Lease</a></li>
-      </ul>
-    </div>
-
-    <!-- Application step body -->
-    <div class="app-section">
-      <div class="header">
-        <h2>Apartment Group</h2>
-        <img src="../img/options.png" height="50" width="50">
+    <div class="main-body">
+      
+      <!-- To do list -->
+      <div class="check-list">
+        <h4>Apartment To Do List</h4>
+        <ul>
+          <li class="done"><a href="group.html">Create Group</a></li>
+          <li class="done"><a href="choose-apt.html">Choose Apartment</a></li>
+          <li><a href="app-turnin.html">Turn in Application</a></li>
+          <li><a href="deposit.html">Make Deposit</a></li>
+          <li><a href="utilities.html">Set up Utilities</a></li>
+          <li><a href="rent-insur.html">Get Renters Insurance</a></li>
+          <li><a href="id-turnin.html">Turn in Identity Documents</a></li>
+          <li><a href="sign-lease.html">Sign Lease</a></li>
+        </ul>
       </div>
-      <div class="body">
+
+      <!-- Application step body -->
+      <div class="app-section">
+        <div class="header">
+          <h2>Apartment Group</h2>
+          <img src="../img/options.png" height="50" width="50">
+        </div>
+        <div class="body">
+          <a href="https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2011/sargent-lecture_slides.pdf" download>Download application</a>
+          <!-- pdf
+          <embed src="https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2011/sargent-lecture_slides.pdf" width="500" height="375" type='application/pdf'>-->
+          <div class="upload-form">
+            <form>
+              <div>
+                <label for="file">Choose file to upload</label>
+                <input type="file" id="file" name="file" multiple>
+              </div>
+              <div>
+                 <button>Submit</button>
+              </div>
+            </form>  
+          </div>
+        </div>
+      </div>
+
+      <!-- Application Progress -->
+      <div class="progress-bar"> 
         <ol>
           <li>
-            <div class="member">
-              <img src="../img/profile.png" height="30" width="30">
-              <a>Andrew (You)</a>
-            </div>
+            <a>Andrew (You)</a>
           </li>
           <li>
-            <div class="member">
-              <img src="../img/profile.png" height="30" width="30">
-              <a>Pete</a>
-            </div>
+            <a>Pete</a>
           </li>
           <li>
-            <div class="member">
-              <img src="../img/profile.png" height="30" width="30">
-              <a>Vac</a>
-            </div>
+            <a>Vac</a>
           </li>
           <li>
-            <div class="member">
-              <img src="../img/profile.png" height="30" width="30">
-              <a>Tommy</a>
-            </div>
+            <a>Tommy</a>
           </li>
         </ol>
       </div>
+
+      <div class="clearer"></div>
+
+      <!-- Chat -->
+      <div class="chat-box">
+        <div class="chat">
+          <a>Apartment Chat</a>
+        </div>
+        <div class="chat">
+          <a>Leasing Office Chat</a>
+        </div>  
+      </div>
     </div>
 
-    <!-- Chat -->
-    <div class="chat">
-      <a>Apartment Group Chat</a>
-    </div>
-    <div class="chat">
-      <a>Apartment and Leasing Rep Chat</a>
-    </div>
+   
 
   </body>
 
