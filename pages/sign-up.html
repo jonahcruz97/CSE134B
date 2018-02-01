@@ -6,6 +6,7 @@
 
     <title>Lease Ease</title>
     <link rel="stylesheet" type="text/css" href="../css/main-stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/account-stylesheet.css" media="screen" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
   </head>
 
@@ -18,58 +19,46 @@
 
     <!-- Main body -->
     <div class="main-body">
-
-      <div class="box-container">
-        <div class="box-header">
-          <h3>Create Account</h3>
-        </div>
-        <div class="box-body">
-          <form>
-            Apartment Complex:<br>
-            <input list="apts" name="apts">
-            <datalist id="apts">
-              <option value="Axion La Jolla">
-              <option value="Casa Mira View">
-              <option value="Costa Verde">
-              <option value="Regents La Jolla">
-              <option value="Renaissance Apartments">
-            </datalist>
-            <br>First Name:<br>
-            <input type="text" name="fname">
-            <br>Last Name:<br>
-            <input type="text" name="lname">
-            <br>Username:<br>
-            <input type="text" name="userid">
-            <br>Email:<br>
-            <input type="email" name="email">
-            <br>Password:<br>
-            <input type="password" name="password">
-            <br>
-            <input type="checkbox" name="leasing-rep" value="leasing-rep">Leasing Representative
-            <br><br>
-            <input type="button" onclick="" value="Create Account" name="submit">
-          </form>
-        </div>
+      <div class="box-holder">
+        <div class="long-box-container">
+          <div class="box-header">
+            <h3>Create Account</h3>
+          </div>
+          <div class="box-body">
+            <form class="input-form">
+            <div class="input-title">Apartment Complex:</div>
+              <input list="apts" name="apts" class="input-box">
+              <datalist id="apts">
+                <option value="Axion La Jolla">
+                <option value="Casa Mira View">
+                <option value="Costa Verde">
+                <option value="Regents La Jolla">
+                <option value="Renaissance Apartments">
+              </datalist>
+              <div class="input-title">First Name:</div>
+              <input type="text" name="fname" class="input-box">
+              <div class="input-title">Last Name:</div>
+              <input type="text" name="lname" class="input-box">
+              <div class="input-title">Username:</div>
+              <input type="text" name="userid" class="input-box">
+              <div class="input-title">Email:</div>
+              <input type="email" name="email" class="input-box">
+              <div class="input-title">Password:</div>
+              <input type="password" name="password" class="input-box">
+              <br>
+              <div class="check-box">
+                <input type="checkbox" name="leasing-rep" value="leasing-rep">Leasing Representative
+              </div>
+              <br>
+              <input type="button" onclick="" value="Create Account" name="submit" class="button">
+            </form>
+          </div>
+        </div>  
       </div>
     </div>
   </body>
 
   <footer>
-    <!-- Footer -->
-    <div class="container">
-      <h5 class="white-text">Footer Content</h5>
-      <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-    </div>
-    <ul>
-      <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
-      <li><a class="grey-text text-lighten-3" href="#!">Privacy Notice</a></li>
-      <li><a class="grey-text text-lighten-3" href="#!">Terms and Conditions</a></li>
-    </ul>
-    <div class="footer-copyright">
-      <div class="container">
-      © 2017 Copyright
-      </div>
-    </div>
   </footer>
 
 </html>

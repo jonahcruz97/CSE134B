@@ -53,7 +53,7 @@ ul li.done:before {
 .nav {
 	background: lightsteelblue;
 	position: relative;
-	height: 70px;
+	height: 9%;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -74,8 +74,8 @@ ul li.done:before {
 }
 
 .logo {
-	height: 60px;
-	width: 65px;
+	height: 85%;
+    width: 60px;
 	position: absolute;
 	top: 0;
     bottom: 0;
@@ -114,7 +114,12 @@ ul li.done:before {
 
 .intro-content {
 	position: static;
-	background-color: #80808038;
+	background-color: #3d4042;
+	color: #ececec;
+}
+
+.intro-content h3 {
+	color: #ffffff
 }
 
 .introduction {
@@ -164,10 +169,14 @@ ul li.done:before {
 .footer {
 	text-align: center;
 	font-family: Verdana, Geneva, sans-serif;
+	padding: 10px;
+	background-color: #80808038;
 }
 
 .footer ul {
 	list-style-type: none;
+	margin-top: 0px;
+	padding-left: 0px;
 }
 
 .chat-box {
