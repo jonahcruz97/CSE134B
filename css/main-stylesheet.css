@@ -21,6 +21,7 @@ a:link, a:visited {
 	background-color: #3d4042;
 	padding: 13px;
 	height: 100%;
+
 }
 
 .check-list a:link {
@@ -198,4 +199,28 @@ ul li.done:before {
 .app-section {
 	float: left;
 	
+}
+
+.header {
+	padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #80808038;
+    width: 97.6%;
+}
+
+.header h2 {
+	margin: 0;
+}
+
+.button {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: right;
 }

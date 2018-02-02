@@ -1,0 +1,41 @@
+.content-section {
+    width: 73%;
+}
+
+.gear {
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    transform: translateY(-50%);
+    height: 35px;
+    width: 35px;
+}
+
+.group-header {
+    position: relative;
+}
+
+.member {
+    padding: 25px;
+    position: relative;
+    width: 70%;
+    height: 35%;
+}
+
+.member-info {
+    vertical-align: middle;
+}
+
+.member-info a {
+    padding-left: 10px;
+}
+
+.profile-pic {
+    height: 45px;
+    width: 45px;
+    vertical-align: middle;
+}
+
+.body ol {
+    list-style-type: none;
+}

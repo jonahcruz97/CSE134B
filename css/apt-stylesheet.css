@@ -1,0 +1,55 @@
+.content-section {
+	width: 73.9%;
+}
+
+.apt-list {
+	list-style-type:none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.member {
+	padding: 25px;
+	position: relative;
+	width: 70%;
+	height: 35%;
+}
+
+.apt-pic {
+	height: 120px;
+    width: 220px;
+}
+
+.apt-info {
+	display: inline-block;
+	position: absolute;
+	padding-left: 20px;
+}
+
+.apt-info a {
+	padding-bottom: 9px;
+    display: inherit;
+}
+
+.unit-header {
+	font-size: 19px;
+	padding-bottom: 6px;
+}
+
+.apt-pics {
+    padding: 10px;
+
+}
+
+.apt-pics ol {
+	list-style-type: none;
+}
+
+.apt-pics li {
+    float: left;
+    padding: 25px;
+}
+
+.desc-section {
+	padding: 0px 40px 10px 55px;
+}
