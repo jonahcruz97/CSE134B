@@ -11,6 +11,13 @@
     transform: translateY(-50%);
 }
 
+.pdf-app-body {
+	position: absolute;
+    top: 100%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
 .app-body a {
 	padding-bottom: 10px;
 }
@@ -50,3 +57,5 @@ ol li.done:before {
   color: #8bc34a;
   padding-right: 5px;
 }
+
+

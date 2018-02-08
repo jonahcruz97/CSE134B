@@ -25,27 +25,34 @@
             <h3>Account Sign In</h3>
           </div>
           <div class="box-body">
-            <form class="input-form">
+            <form class="input-form" action="/action_page.php">
               <div class="input-title">Apartment Complex:</div>
-              <input list="apts" name="apts" class="input-box">
+              <input list="apts" name="apts" id="apt-input" class="input-box" required>
               <datalist id="apts">
-                <option value="Axion La Jolla">
+                <!--<option value="Axiom La Jolla">
                 <option value="Casa Mira View">
                 <option value="Costa Verde">
                 <option value="Regents La Jolla">
-                <option value="Renaissance Apartments">
+                <option value="Renaissance Apartments">-->
               </datalist>
               <div class="input-title">Username:</div>
-              <input type="text" name="userid" class="input-box">
+              <input type="text" name="userid" id="user-name-input" class="input-box" required>
               <div class="input-title">Password:</div>
-              <input type="password" name="password" class="input-box">
-              <br><br>
-              <input type="button" onclick="" value="Sign In" name="sign-in" class="button">
+              <input type="password" name="password" id="password-input" class="input-box" required>
+              <br>
+              <div class="check-box">
+                <input type="checkbox" name="leasing-rep" value="leasing-rep" id="leasing-rep-input">Leasing Representative
+              </div>
+              <br>
+              <input type="button" onclick="signIn()" value="Sign In" name="sign-in" class="button">
             </form>
           </div>
         </div>
       </div>
     </div>
+
+
+    <script src="../js/account-script.js"></script>
   </body>
 
   <footer>
