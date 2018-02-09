@@ -27,7 +27,7 @@ let userData = [
 let apartments = ["Axiom La Jolla", "Casa Mira View", "Costa Verde", 
 				  "Regents La Jolla", "Renaissance Apartments"];
 
-let currentUser = "";
+var currentUser = "jcruz";
 
 /**
  * Populates apartments you can sign into
@@ -36,11 +36,13 @@ function populateApts () {
 
 	let apts = document.getElementById("apts");
 
-	apartments.forEach(function(apartment) {
-   		let option = document.createElement("option");
-   		option.value = apartment;
-   		apts.appendChild(option);
-	});
+	if (apts != null) {
+		apartments.forEach(function(apartment) {
+	   		let option = document.createElement("option");
+	   		option.value = apartment;
+	   		apts.appendChild(option);
+		});
+	}
 }
 
 populateApts();
@@ -64,9 +66,9 @@ function signIn () {
 		return;
 	}
 
-	currentUser = userNameInput;
-
 	let user = userData.find(function (user) { return user.userName === userNameInput; });
+
+	setSessionStorage(user);
 
 	if (user.isLeasingRep) {
 
@@ -123,6 +125,19 @@ function verifyAccount (userNameInput, passwordInput) {
 	return true;
 }
 
+
+/**
+ * Saves user information to local storage
+ */
+function setSessionStorage (user) {
+
+	sessionStorage.setItem("localUserData", JSON.stringify(user));
+}
+
+
+/**
+ * Gets specific user from data storage
+ */
 function getUser (userNameInput) {
 
 	for (let i = 0; i < userData.length; i++) {
@@ -158,9 +173,7 @@ function signUp() {
 		return;
 	}
 
-	currentUser = userNameInput;
-
-	currentUser(aptInput, signUpValues, leasingRepInput);
+	saveAccount(aptInput, signUpValues, leasingRepInput);
 
 	if (leasingRepInput.checked) {
 
@@ -224,4 +237,8 @@ function saveAccount (aptInput, signInValues, leasingRepInput) {
 		password: signInValues[4],
 		isLeasingRep: leasingRepInput.checked
 	}
+
+	userData.push(newUser);
+
+	setSessionStorage(newUser);
 }

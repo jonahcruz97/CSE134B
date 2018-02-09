@@ -30,6 +30,11 @@
 	padding-right: 10px;
 }
 
+.upload-form embed {
+	padding-top: 355px;
+    height: 420px;
+}
+
 .upload-form button {
 	margin: 10px;
 	margin-top: 40px;
