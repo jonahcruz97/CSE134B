@@ -16,9 +16,9 @@
     <div class="nav">
         <img src="../img/logo.png" class="logo">
         <div class="title">
-            <h2>Axiom La Jolla</h2>
+            <h2 id="aptTitle"></h2> 
         </div>
-        <img src="../img/profile.png" class="profile">
+        <img src="../img/profile.png" id="myProfile" class="profile">
     </div>
 
     <!-- Main body -->
@@ -64,7 +64,6 @@
                 </ol>
             </div>
         </div>
-        <div class="main-body">
             <div class="box-holder">
                 <div class="box-container">
                     <div class="box-header">
@@ -89,19 +88,34 @@
                     </div>
                 </div>
             </div>
-        </div>
-</body>
 
-<!-- Chat -->
-<div class="chat-box">
-    <div class="chat">
-        <a>Apartment Chat</a>
+    <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <ul id="profile-list"></ul>
+          <div class="button-container">
+            <button id="logoutBtn" class="modal-button">Logout</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat -->
+      <div class="chat-box">
+        <div class="chat">
+          <a>Apartment Chat</a>
+        </div>
+        <div class="chat">
+          <a>Leasing Office Chat</a>
+        </div>  
+      </div>
     </div>
-    <div class="chat">
-        <a>Leasing Office Chat</a>
-    </div>
-</div>
-    </div>
+
+
+    <script src="../js/account-script.js"></script>
+    <script src="../js/profile-script.js"></script>
 </body>
 
 <footer></footer>

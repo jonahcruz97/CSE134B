@@ -3,11 +3,12 @@
 	position: relative;
 	height: 100%;
     width: 100%;
+    z-index: 1;
 }
 
 .box-container {
 	position: absolute;
-    height: 350px;
+    height: 390px;
     width: 40%;
     top: 0%;
     left: 51%;

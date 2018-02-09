@@ -27,35 +27,32 @@
           <div class="box-body">
             <form class="input-form">
             <div class="input-title">Apartment Complex:</div>
-              <input list="apts" name="apts" class="input-box">
+              <input list="apts" name="apts" class="input-box" id="apt-input" required>
               <datalist id="apts">
-                <option value="Axion La Jolla">
-                <option value="Casa Mira View">
-                <option value="Costa Verde">
-                <option value="Regents La Jolla">
-                <option value="Renaissance Apartments">
               </datalist>
               <div class="input-title">First Name:</div>
-              <input type="text" name="fname" class="input-box">
+              <input type="text" name="fname" class="input-box" id="fname-input" required>
               <div class="input-title">Last Name:</div>
-              <input type="text" name="lname" class="input-box">
+              <input type="text" name="lname" class="input-box" id="lname-input" required>
               <div class="input-title">Username:</div>
-              <input type="text" name="userid" class="input-box">
+              <input type="text" name="userid" class="input-box" id="user-name-input" required>
               <div class="input-title">Email:</div>
-              <input type="email" name="email" class="input-box">
+              <input type="email" name="email" class="input-box" id="email-input" required>
               <div class="input-title">Password:</div>
-              <input type="password" name="password" class="input-box">
+              <input type="password" name="password" class="input-box" id="password-input" required>
               <br>
               <div class="check-box">
-                <input type="checkbox" name="leasing-rep" value="leasing-rep">Leasing Representative
+                <input type="checkbox" name="leasing-rep" id="leasing-rep-input" value="leasing-rep">Leasing Representative
               </div>
               <br>
-              <input type="button" onclick="" value="Create Account" name="submit" class="button">
+              <input type="button" onclick="signUp()" value="Create Account" name="submit" class="button">
             </form>
           </div>
         </div>  
       </div>
     </div>
+
+    <script src="../js/account-script.js"></script>
   </body>
 
   <footer>
