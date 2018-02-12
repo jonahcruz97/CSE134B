@@ -34,11 +34,9 @@ function populateAptTitle() {
 populateAptTitle();
 
 
-function makeUL(userData) {
-    // Create the list element:
-    var list = document.getElementById('profile-list');
+function makeUL(array, list) {
 
-    var array = makeProfileArray(JSON.parse(sessionStorage.getItem("localUserData")));
+    //var array = makeProfileArray(JSON.parse(sessionStorage.getItem("localUserData")));
 
     for(var i = 0; i < array.length; i++) {
         // Create the list item:
@@ -58,7 +56,7 @@ function makeUL(userData) {
 function makeProfileArray(userData) {
 	var array = [];
 
-	// While there is no server set up
+	// TODO While there is no server set up
 	if (userData == null) {
 		userData = getUser(currentUser);
 	}
@@ -74,7 +72,10 @@ function makeProfileArray(userData) {
 
 // Add the contents of options[0] to #foo:
 //document.getElementById('modal-content').appendChild(makeUL(getUser(currentUser)));
-makeUL(getUser(currentUser));
+let profileArray =  makeProfileArray(JSON.parse(sessionStorage.getItem("localUserData")));
+let profileList = document.getElementById('profile-list');
+
+makeUL(profileArray, profileList);
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
