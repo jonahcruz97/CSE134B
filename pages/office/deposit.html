@@ -7,6 +7,7 @@
     <title>Lease Ease</title>
     <link rel="stylesheet" type="text/css" href="../../css/main-stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../../css/deposit-office-stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/chat-stylesheet.css" media="screen" />
     <link rel="shortcut icon" type="image/x-icon" href="../../img/logo.png" />
 </head>
 
@@ -26,8 +27,7 @@
         <!-- To do list -->
         <div class="check-list">
             <h4>Apartment To Do List</h4>
-            <ul id="check-list">
-            </ul>
+            <ul id="check-list"></ul>
         </div>
 
         <!-- Application step body -->
@@ -77,33 +77,32 @@
 <div class="clearer"></div>
 
 <!-- The Modal -->
-      <div id="myModal" class="modal">
+<div id="myModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <ul id="profile-list"></ul>
-          <div class="button-container">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <ul id="profile-list"></ul>
+        <div class="button-container">
             <button id="logoutBtn" class="modal-button">Logout</button>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
-      <!-- Chat -->
-      <div class="chat-box">
-        <div class="chat">
-          <a>Apartment Chat</a>
-        </div>
-        <div class="chat">
-          <a>Leasing Office Chat</a>
-        </div>  
-      </div>
+<!-- Chat -->
+<div class="members-count">Apartment Chat</div>
+<div class="members-list">Online: Pete, Vac, Andrew (You)</div>
+<div class="messages"></div>
+<form class="message-form" onsubmit="return false;">
+    <input class="message-form__input" placeholder="Type a message.." type="text" id="message-id" />
+    <input class="message-form__button" value="Send" type="submit" />
+</form>
     </div>
 
-
-    <script src="../../js/account-script.js"></script>
-    <script src="../../js/profile-script.js"></script>
-    <script src="../../js/todo-script.js"></script>
+<script src="../js/account-script.js"></script>
+<script src="../js/profile-script.js"></script>
+<script src="../js/todo-script.js"></script>
+<script src="../js/chat-script.js"></script>
   </body>
 
 <footer></footer>

@@ -1,100 +1,99 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8">
 
     <title>Lease Ease</title>
     <link rel="stylesheet" type="text/css" href="../css/main-stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/chat-stylesheet.css" media="screen" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
-  </head>
+</head>
 
-  <body class="renterClass">
+<body class="renterClass">
 
     <!-- Top Nav bar -->
     <div class="nav">
-      <img src="../img/logo.png" class="logo">
-      <div class="title">
-        <h2 id="aptTitle"></h2>  
-      </div>
-      <img src="../img/profile.png" id="myProfile" class="profile">
+        <img src="../img/logo.png" class="logo">
+        <div class="title">
+            <h2 id="aptTitle"></h2>
+        </div>
+        <img src="../img/profile.png" id="myProfile" class="profile">
     </div>
 
     <!-- Main body -->
     <div class="main-body">
 
-      <!-- To do list -->
-      <div class="check-list">
-        <h4>Apartment To Do List</h4>
-        <ul id="check-list">
-        </ul>
-      </div>
-
-      <!-- Application step body -->
-      <div class="app-section">
-        <div class="header">
-          <h2>Apartment Group</h2>
-          <img src="../img/options.png" height="50" width="50">
+        <!-- To do list -->
+        <div class="check-list">
+            <h4>Apartment To Do List</h4>
+            <ul id="check-list"></ul>
         </div>
-        <div class="body">
-          <ol>
-            <li>
-              <div class="member">
-                <img src="../img/profile.png" height="30" width="30">
-                <a>Andrew (You)</a>
-              </div>
-            </li>
-            <li>
-              <div class="member">
-                <img src="../img/profile.png" height="30" width="30">
-                <a>Pete</a>
-              </div>
-            </li>
-            <li>
-              <div class="member">
-                <img src="../img/profile.png" height="30" width="30">
-                <a>Vac</a>
-              </div>
-            </li>
-            <li>
-              <div class="member">
-                <img src="../img/profile.png" height="30" width="30">
-                <a>Tommy</a>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </div>
 
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <ul id="profile-list"></ul>
-          <div class="button-container">
-            <button id="logoutBtn" class="modal-button">Logout</button>
-          </div>
+        <!-- Application step body -->
+        <div class="app-section">
+            <div class="header">
+                <h2>Apartment Group</h2>
+                <img src="../img/options.png" height="50" width="50">
+            </div>
+            <div class="body">
+                <ol>
+                    <li>
+                        <div class="member">
+                            <img src="../img/profile.png" height="30" width="30">
+                            <a>Andrew (You)</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member">
+                            <img src="../img/profile.png" height="30" width="30">
+                            <a>Pete</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member">
+                            <img src="../img/profile.png" height="30" width="30">
+                            <a>Vac</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member">
+                            <img src="../img/profile.png" height="30" width="30">
+                            <a>Tommy</a>
+                        </div>
+                    </li>
+                </ol>
+            </div>
         </div>
-      </div>
 
-      <!-- Chat -->
-      <div class="chat-box">
-        <div class="chat">
-          <a>Apartment Chat</a>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul id="profile-list"></ul>
+                <div class="button-container">
+                    <button id="logoutBtn" class="modal-button">Logout</button>
+                </div>
+            </div>
         </div>
-        <div class="chat">
-          <a>Leasing Office Chat</a>
-        </div>  
-      </div>
+
+        <!-- Chat -->
+        <div class="members-count">Apartment Chat</div>
+        <div class="members-list">Online: Pete, Vac, Andrew (You)</div>
+        <div class="messages"></div>
+        <form class="message-form" onsubmit="return false;">
+            <input class="message-form__input" placeholder="Type a message.." type="text" id="message-id" />
+            <input class="message-form__button" value="Send" type="submit" />
+        </form>
     </div>
-
 
     <script src="../js/account-script.js"></script>
     <script src="../js/profile-script.js"></script>
     <script src="../js/todo-script.js"></script>
-  </body>
+    <script src="../js/chat-script.js"></script>
+</body>
 
   <footer>
   </footer>

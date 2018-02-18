@@ -1,86 +1,85 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8">
 
     <title>Lease Ease</title>
     <link rel="stylesheet" type="text/css" href="../css/main-stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/chat-stylesheet.css" media="screen" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
-  </head>
+</head>
 
   <body class="renterClass">
 
-    <!-- Top Nav bar -->
-    <div class="nav">
-      <img src="../img/logo.png" class="logo">
-      <div class="title">
-        <h2 id="aptTitle"></h2>  
-      </div>
-      <img src="../img/profile.png" id="myProfile" class="profile">
-    </div>
-
-    <!-- Main body -->
-    <div class="main-body">
-
-      <!-- To do list -->
-      <div class="check-list">
-        <h4>Apartment To Do List</h4>
-        <ul id="check-list">
-        </ul>
-      </div>
-
-      <!-- Application step body -->
-           <div class="app-section">
-        <div class="header">
-          <h2>Submit Identification Documents</h2>
-
-        </div>
-        <h4> Please upload a copy of a U.S. Driver's License or Passport</h4>
-          <br></br>
-        <div class="body">
-          <div class="upload-form">
-            <form>
-              <div>
-                <label for="file">Choose file to upload</label>
-                <input type="file" id="file" name="file" multiple>
-              </div>
-              <div>
-                 <button>Submit</button>
-              </div>
-            </form>  
+      <!-- Top Nav bar -->
+      <div class="nav">
+          <img src="../img/logo.png" class="logo">
+          <div class="title">
+              <h2 id="aptTitle"></h2>
           </div>
-        </div>
+          <img src="../img/profile.png" id="myProfile" class="profile">
       </div>
 
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
+      <!-- Main body -->
+      <div class="main-body">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <ul id="profile-list"></ul>
-          <div class="button-container">
-            <button id="logoutBtn" class="modal-button">Logout</button>
+          <!-- To do list -->
+          <div class="check-list">
+              <h4>Apartment To Do List</h4>
+              <ul id="check-list"></ul>
           </div>
-        </div>
+
+          <!-- Application step body -->
+          <div class="app-section">
+              <div class="header">
+                  <h2>Submit Identification Documents</h2>
+
+              </div>
+              <h4> Please upload a copy of a U.S. Driver's License or Passport</h4>
+              <br></br>
+              <div class="body">
+                  <div class="upload-form">
+                      <form>
+                          <div>
+                              <label for="file">Choose file to upload</label>
+                              <input type="file" id="file" name="file" multiple>
+                          </div>
+                          <div>
+                              <button>Submit</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <ul id="profile-list"></ul>
+                  <div class="button-container">
+                      <button id="logoutBtn" class="modal-button">Logout</button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Chat -->
+          <div class="members-count">Apartment Chat</div>
+          <div class="members-list">Online: Pete, Vac, Andrew (You)</div>
+          <div class="messages"></div>
+          <form class="message-form" onsubmit="return false;">
+              <input class="message-form__input" placeholder="Type a message.." type="text" id="message-id" />
+              <input class="message-form__button" value="Send" type="submit" />
+          </form>
       </div>
 
-      <!-- Chat -->
-      <div class="chat-box">
-        <div class="chat">
-          <a>Apartment Chat</a>
-        </div>
-        <div class="chat">
-          <a>Leasing Office Chat</a>
-        </div>  
-      </div>
-    </div>
-
-
-    <script src="../js/account-script.js"></script>
-    <script src="../js/profile-script.js"></script>
-    <script src="../js/todo-script.js"></script>
+      <script src="../js/account-script.js"></script>
+      <script src="../js/profile-script.js"></script>
+      <script src="../js/todo-script.js"></script>
+      <script src="../js/chat-script.js"></script>
   </body>
 
   <footer>

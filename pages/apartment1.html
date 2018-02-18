@@ -1,114 +1,114 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8">
 
     <title>Lease Ease</title>
     <link rel="stylesheet" type="text/css" href="../css/main-stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="../css/apt-stylesheet.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../css/apt-stylesheet.css" media="screen" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
-  </head>
+    <link rel="stylesheet" type="text/css" href="../css/chat-stylesheet.css" media="screen" />
+</head>
 
-  <body class="renterClass">
+<body class="renterClass">
 
     <!-- Top Nav bar -->
     <div class="nav">
-      <img src="../img/logo.png" class="logo">
-      <div class="title">
-        <h2 id="aptTitle"></h2>  
-      </div>
-      <img src="../img/profile.png" id="myProfile" class="profile">
+        <img src="../img/logo.png" class="logo">
+        <div class="title">
+            <h2 id="aptTitle"></h2>
+        </div>
+        <img src="../img/profile.png" id="myProfile" class="profile">
     </div>
 
     <!-- Main body -->
     <div class="main-body">
-      <!-- To do list -->
-      <div class="check-list">
-        <h4>Apartment To Do List</h4>
-        <ul id="check-list">
-        </ul>
-      </div>
-
-      <!-- Application step body -->
-      <div class="app-section content-section">
-        <div class="header">
-          <h2>Sea Model Unit 2436</h2>
+        <!-- To do list -->
+        <div class="check-list">
+            <h4>Apartment To Do List</h4>
+            <ul id="check-list"></ul>
         </div>
 
-        <div class="apt-pics"> 
-          <ol>
-            <li>
-              <img src="../img/axiom-apt1.jpg" class="apt-pic">
-            </li>
-            <li>
-              <img src="../img/int-apt1.jpg" class="apt-pic">
-            </li>
-            <li>
-              <img src="../img/int-apt2.jpg" class="apt-pic">
-            </li>
-            <li>
-              <img src="../img/int-apt3.jpg" class="apt-pic">
-            </li>
-          </ol>
+        <!-- Application step body -->
+        <div class="app-section content-section">
+            <div class="header">
+                <h2>Sea Model Unit 2436</h2>
+            </div>
+
+            <div class="apt-pics">
+                <ol>
+                    <li>
+                        <img src="../img/axiom-apt1.jpg" class="apt-pic">
+                    </li>
+                    <li>
+                        <img src="../img/int-apt1.jpg" class="apt-pic">
+                    </li>
+                    <li>
+                        <img src="../img/int-apt2.jpg" class="apt-pic">
+                    </li>
+                    <li>
+                        <img src="../img/int-apt3.jpg" class="apt-pic">
+                    </li>
+                </ol>
+            </div>
+
+            <div class="clearer"></div>
+
+            <div class="body">
+                <div class="desc-section">
+                    <h2>Description</h2>
+                    <p>
+                        Price: $2330<br>
+                        2 Bed, 2 Bath<br>
+                        Washing machine and dryer<br>
+                        964 square feet<br>
+                        3rd floor<br>
+                        Balcony access<br>
+                    </p>
+                </div>
+
+                <div class="upload-form">
+                    <form>
+                        <div>
+                            <button class="button">Choose Apartment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+
 
         <div class="clearer"></div>
 
-        <div class="body">
-          <div class="desc-section">
-            <h2>Description</h2>
-            <p>Price: $2330<br>
-              2 Bed, 2 Bath<br>
-              Washing machine and dryer<br>
-              964 square feet<br>
-              3rd floor<br>
-              Balcony access<br>
-            </p>
-          </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-          <div class="upload-form">
-            <form>
-              <div>
-                 <button class="button">Choose Apartment</button>
-              </div>
-            </form>  
-          </div>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul id="profile-list"></ul>
+                <div class="button-container">
+                    <button id="logoutBtn" class="modal-button">Logout</button>
+                </div>
+            </div>
         </div>
-      </div>
 
-
-      <div class="clearer"></div>
-
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <ul id="profile-list"></ul>
-          <div class="button-container">
-            <button id="logoutBtn" class="modal-button">Logout</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Chat -->
-      <div class="chat-box">
-        <div class="chat">
-          <a>Apartment Chat</a>
-        </div>
-        <div class="chat">
-          <a>Leasing Office Chat</a>
-        </div>  
-      </div>
+        <!-- Chat -->
+        <div class="members-count">Apartment Chat</div>
+        <div class="members-list">Online: Pete, Vac, Andrew (You)</div>
+        <div class="messages"></div>
+        <form class="message-form" onsubmit="return false;">
+            <input class="message-form__input" placeholder="Type a message.." type="text" id="message-id" />
+            <input class="message-form__button" value="Send" type="submit" />
+        </form>
     </div>
-
 
     <script src="../js/account-script.js"></script>
     <script src="../js/profile-script.js"></script>
     <script src="../js/todo-script.js"></script>
-  </body>
+    <script src="../js/chat-script.js"></script>
+</body>
 
   <footer>
   </footer>
