@@ -91,6 +91,9 @@ let todoListOffice = [
 	}
 ]
 
+sessionStorage.setItem("todoListRenter", JSON.stringify(todoListRenter));
+
+
 //let todoList = makeProfileArray(JSON.parse(sessionStorage.getItem("localUserData")));
 //let checkList = document.getElementById('check-list');
 
@@ -103,6 +106,7 @@ function populateTodoList () {
 		todoListRenter : todoListOffice;
 
 	let checkList = document.getElementById('check-list');
+	checkList.innerHTML ='';
 
 	makeUL(todoList, checkList);
 }
@@ -146,7 +150,7 @@ function makeUL(array, list) {
 /**
  * Gets todo task from data list
  */
-function getTask (tastIdInput, todoList) {
+function getTask (taskIdInput, todoList) {
 
 	for (let i = 0; i < todoList.length; i++) {
 		if (todoList[i].taskid == taskIdInput) {
@@ -155,4 +159,23 @@ function getTask (tastIdInput, todoList) {
 	}
 
 	return null;
+}
+
+
+function submitLease () {
+	//when lease is submitted, change submitted to be true
+	// TODO: figure out how to make this data persistent
+	// todo-script is being re-run so all the data I store to session storage is lost continuously
+	// we need to redesign how we handle javascript so we aren't constantly running scripts.
+	todoListRenter = JSON.parse(sessionStorage.getItem("todoListRenter"));
+	todoListRenter[7].submitted = true;
+	todoListRenter[7].approved = true;	
+	populateTodoList();
+}
+
+function submitRenters () {
+	//when lease is submitted, change submitted to be true
+	todoListRenter[5].submitted = true;
+	todoListRenter[5].approved = true;
+	populateTodoList();
 }
