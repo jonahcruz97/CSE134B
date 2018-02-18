@@ -175,7 +175,8 @@ function submitLease () {
 
 function submitRenters () {
 	//when lease is submitted, change submitted to be true
+	todoListRenter = JSON.parse(sessionStorage.getItem("todoListRenter"));
 	todoListRenter[5].submitted = true;
-	todoListRenter[5].approved = true;
+	todoListRenter[5].approved = true;	
 	populateTodoList();
 }
